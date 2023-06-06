@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 60vh;
+  background: url("../images/bgImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  width: 90%;
+  /* border: 2px solid red; */
+}
+.nav {
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-headline {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.todo-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.form-todo {
+  /* border: 2px solid blue; */
+  min-height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.form-todo input {
+  min-height: 100%;
+}
+
+.form-todo input[type="text"] {
+  width: 80%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+.form-todo input[type="submit"] {
+  width: 15%;
+  background-color: rgb(44, 55, 63);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.section-signup {
+  text-align: center;
+  margin: 2rem auto;
+  background: rgb(240, 240, 240);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.signup-form {
+  max-width: 800px;
+  width: 95%;
+  text-align: left;
+  margin: auto;
+}
+
+.signup-form label {
+  display: block;
+}
+.signup-form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.signup-form textarea {
+  width: 100%;
+}
+
+.signup-btn {
+  background-color: rgb(44, 55, 63);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: block;
+  margin: 1rem auto;
+}
