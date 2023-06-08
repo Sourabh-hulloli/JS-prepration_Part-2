@@ -7,8 +7,6 @@ const person = {
   "person hobbies": ["swimming", "treckking", "bike riding"],
 };
 
-console.log(person["person hobbies"]);
-
 person[key] = "sourabh.hulloli@gmail.com";
 // person[`${key}`] = "sourabh.hulloli@gmail.com";
 console.log(person);

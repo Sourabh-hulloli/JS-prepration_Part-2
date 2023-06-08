@@ -8,6 +8,7 @@
 
 //? 2. getElementsByTagName() returns HTML Collection
 // const boxes = document.getElementsByTagName("div");
+// console.log(boxes);
 // const result = document.getElementById("result");
 // result.innerHTML = `The <em>getElementsByTagName()</em> method returns <strong>${boxes}</strong>`;
 

@@ -7,10 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="blog-test">
-      This element <span style="display: none">Hello</span> is
-      <strong>strong</strong> and has super fun <code>code</code>!
-    </div>
-    <script src="./app.js"></script>
+    <div id="blog-test"></div>
+    <!-- <script src="./app.js"></script> -->
+
+    <script>
+      const getValue = document.getElementById("blog-test");
+      document.write(getValue.innerHTML);
+    </script>
   </body>
 </html>
