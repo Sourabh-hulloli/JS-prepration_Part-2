@@ -72,7 +72,10 @@ a {
   margin-top: 2rem;
   text-align: center;
 }
-
+.bg-dark {
+  background: #000;
+  color: #fff;
+}
 .form-todo {
   /* border: 2px solid blue; */
   min-height: 7vh;
@@ -99,6 +102,20 @@ a {
   color: #fff;
   border-radius: 5px;
   font-size: 1rem;
+}
+
+.todo-list {
+  text-align: left;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+.todo-list li {
+  padding: 0.5rem;
+  background: #444;
+  color: cyan;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  border-radius: 5px;
 }
 
 .section-signup {
