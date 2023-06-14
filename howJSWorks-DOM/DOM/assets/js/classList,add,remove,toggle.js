@@ -21,7 +21,7 @@ console.log(sectionTodo.classList); // return DOMTokenList
 // sectionTodo.classList.toggle("bg-dark");
 
 //? select header
-// const header = document.querySelector(".header");
-// console.log(header);
-// header.classList.add("bg-dark");
-// console.log(header.classList);
+const header = document.querySelector(".header");
+console.log(header);
+header.classList.add("bg-dark");
+console.log(header.classList);
