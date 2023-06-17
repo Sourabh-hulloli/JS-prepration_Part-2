@@ -112,10 +112,21 @@ a {
 .todo-list li {
   padding: 0.5rem;
   background: #444;
-  color: cyan;
+  color: #fff;
   margin-top: 1rem;
   text-transform: capitalize;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-btn {
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .section-signup {

@@ -27,6 +27,8 @@
     <!-- <script src="./assets/js/events/events.js" defer></script> -->
     <!-- <script src="./assets/js/events/thisInsideEventListener.js" defer></script> -->
     <!-- event on multiple Button refer seperate HTML file -->
+    <!-- <script src="./assets/js/events/keypressAndMouseEvent.js" defer></script> -->
+    <script src="./todoList.js" defer></script>
     <title>My web Site</title>
   </head>
   <body>
@@ -60,6 +62,7 @@
 
     <section class="todo-section container">
       <h2>Your plan for today ?</h2>
+      <!-- Todo form -->
       <form class="form-todo">
         <input type="text" name="" id="" placeholder="Add Todo" />
         <input type="submit" value="Add Todo" class="btn" />
@@ -67,11 +70,19 @@
       <ul class="todo-list">
         <!-- <li class="first-todo">todo 1</li> // this element is used for used for other examples-->
 
-        <li>item 1</li>
+        <!-- <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
         <li>item 4</li>
-        <li>item 5</li>
+        <li>item 5</li> -->
+
+        <li>
+          <span class="text">Do this </span>
+          <div class="todo-buttons">
+            <button class="todo-btn done">Done</button>
+            <button class="todo-btn remove">Remove</button>
+          </div>
+        </li>
       </ul>
     </section>
 
