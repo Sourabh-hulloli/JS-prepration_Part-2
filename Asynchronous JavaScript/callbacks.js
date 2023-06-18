@@ -38,8 +38,43 @@
 // getTowNumbers(2, 5);
 
 //? EX - 4 Add Two Numbers
-function addTwoNumber(num1, num2) {
-  return num1 + num2;
+// function addTwoNumber(num1, num2) {
+//   return num1 + num2;
+// }
+
+// console.log(addTwoNumber(9, 9));
+
+//? EX - 5
+// function getTwoNumbers(number1, number2, callback) {
+//   if (typeof number1 === "number" && typeof number2 === "number") {
+//     callback(number1, number2);
+//   } else {
+//     console.log("Wrong Data Type");
+//   }
+// }
+
+// function addTwoNumbers(num1, num2) {
+//   console.log(num1 + num2);
+// }
+
+// getTwoNumbers("4", "5", addTwoNumbers);
+
+//? EX - 6 Writing a function in arguments
+function getTwoNumbers(number1, number2, onsucess, onfailuer) {
+  if (typeof number1 === "number" && typeof number2 === "number") {
+    onsucess(number1, number2);
+  } else {
+    onfailuer();
+  }
 }
 
-console.log(addTwoNumber(9, 9));
+getTwoNumbers(
+  "4",
+  "5",
+  (num1, num2) => {
+    console.log(num1 + num2);
+  },
+  () => {
+    console.log("Wrong Data Type");
+  }
+);
