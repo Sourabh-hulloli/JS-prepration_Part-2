@@ -7,37 +7,37 @@ const parent = document.querySelector(".parent");
 const child = document.querySelector(".child");
 
 //? Event Capture
-child.addEventListener(
-  "click",
-  (e) => {
-    console.log("Capture !!!! child");
-  },
-  true
-);
+// child.addEventListener(
+//   "click",
+//   (e) => {
+//     console.log("Capture !!!! child");
+//   },
+//   true
+// );
 
-parent.addEventListener(
-  "click",
-  (e) => {
-    console.log("Capture !!!! parent");
-  },
-  true
-);
+// parent.addEventListener(
+//   "click",
+//   (e) => {
+//     console.log("Capture !!!! parent");
+//   },
+//   true
+// );
 
-grandParent.addEventListener(
-  "click",
-  (e) => {
-    console.log("Capture !!!! grandParent");
-  },
-  true
-);
+// grandParent.addEventListener(
+//   "click",
+//   (e) => {
+//     console.log("Capture !!!! grandParent");
+//   },
+//   true
+// );
 
-document.body.addEventListener(
-  "click",
-  (e) => {
-    console.log("Capture !!!! document.body");
-  },
-  true
-);
+// document.body.addEventListener(
+//   "click",
+//   (e) => {
+//     console.log("Capture !!!! document.body");
+//   },
+//   true
+// );
 
 //? Event Bubbling or event Propogation
 child.addEventListener("click", (e) => {
