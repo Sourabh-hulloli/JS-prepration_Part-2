@@ -49,11 +49,104 @@ const heading7 = document.querySelector(".heading-7");
 //   }, 2000);
 // }, 1000);
 
-// EX - 2
-function changeText(element, text, color, time) {
+//? EX - 2 Pyramid of Doom
+function changeText(
+  element,
+  text,
+  color,
+  time,
+  onSuccessCallback,
+  onFailuerCallback
+) {
   setTimeout(() => {
-    element.textContent = text;
-    element.style.color = color;
+    if (element) {
+      element.textContent = text;
+      element.style.color = color;
+      if (onSuccessCallback) {
+        onSuccessCallback();
+      }
+    } else {
+      if (onFailuerCallback) {
+        onFailuerCallback();
+      }
+    }
   }, time);
 }
-changeText(heading1, "one", "violet", 1000);
+changeText(
+  heading1,
+  "One",
+  "violet",
+  1000,
+  () => {
+    changeText(
+      heading2,
+      "Two",
+      "purple",
+      2000,
+      () => {
+        changeText(
+          heading3,
+          "Three",
+          "red",
+          3000,
+          () => {
+            changeText(
+              heading4,
+              "Four",
+              "pink",
+              4000,
+              () => {
+                changeText(
+                  heading5,
+                  "Five",
+                  "green",
+                  4000,
+                  () => {
+                    changeText(
+                      heading6,
+                      "Six",
+                      "blue",
+                      6000,
+                      () => {
+                        changeText(
+                          heading7,
+                          "Seven",
+                          "brown",
+                          7000,
+                          () => {
+                            console.log("hello");
+                          },
+                          () => {
+                            console.log("Heading7 does not exist");
+                          }
+                        );
+                      },
+                      () => {
+                        console.log("Heading6 does not exist");
+                      }
+                    );
+                  },
+                  () => {
+                    console.log("Heading5 does not exist");
+                  }
+                );
+              },
+              () => {
+                console.log("Heading4 does not exist");
+              }
+            );
+          },
+          () => {
+            console.log("Heading3 does not exist");
+          }
+        );
+      },
+      () => {
+        console.log("Heading2 does not exist");
+      }
+    );
+  },
+  () => {
+    console.log("Heading1 does not exist");
+  }
+);
