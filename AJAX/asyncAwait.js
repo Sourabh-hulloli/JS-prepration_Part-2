@@ -2,10 +2,15 @@
 
 const URL = "https://jsonplaceholder.typicode.com/posts";
 
-fetch(URL)
-  .then((response) => {
-    return response.json();
+async function getPosts() {
+  const response = await fetch(URL);
+  const data = response.json();
+  return data;
+}
+getPosts()
+  .then((myData) => {
+    console.log(myData);
   })
-  .then((data) => {
-    console.log(data);
+  .catch((error) => {
+    console.log(error);
   });
